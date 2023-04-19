@@ -59,7 +59,6 @@ VALUES
 ('mango candle', 'The Boss', '49', FALSE)
 ;
 
-SELECT * FROM gifts;
 -- 
 \echo Insert 5 more gifts of your own choosing,  include 1 more candle
 --
@@ -71,8 +70,6 @@ VALUES
 ('Baked Mac & Cheese', 'Grandma', '78', FALSE),
 ('MacBook Air', 'The Boss', '42', FALSE)
 ;
-
-SELECT * FROM gifts;
 
 
 --
