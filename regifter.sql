@@ -8,7 +8,7 @@ CREATE DATABASE regifter;
 -- Write your code below each prompt
 
 --
-\echo Create a table called gifts
+\echo 1. Create a table called gifts
 -- with the following columns
 -- id serial primary KEY
 -- gift - string
@@ -18,27 +18,27 @@ CREATE DATABASE regifter;
 
 
 -- 
-\echo See details of the table you created
+\echo 2. See details of the table you created
 -- 
 
 
 -- 
-\echo Alter the table so that the column price is changed to value 
+\echo 3. Alter the table so that the column price is changed to value 
 -- 
 
 
 -- 
-\echo Insert a peach candle, given by 'Santa' thats value is 9 and has been previously regifted
--- 
-
-
---
-\echo Query for all the columns in your gifts table
+\echo 4. Insert a peach candle, given by 'Santa' thats value is 9 and has been previously regifted
 -- 
 
 
 --
-\echo Uncomment below to insert 5 more gifts
+\echo 5. Query for all the columns in your gifts table
+-- 
+
+
+--
+\echo 6. Uncomment below to insert 5 more gifts
 -- 
 
 -- INSERT INTO gifts (gift, giver, value, previously_regifted)
@@ -51,48 +51,48 @@ CREATE DATABASE regifter;
 -- ;
 
 -- 
-\echo Insert 5 more gifts of your own choosing,  include 1 more candle
+\echo 7. Insert 5 more gifts of your own choosing,  include 1 more candle
 --
 
 
 
 --
-\echo Query for gifts with a price greater than or equal to 20
+\echo 8. Query for gifts with a price greater than or equal to 20
 --
 
 
 --
-\echo Query for every gift that has the word candle in it, only show the gift column
+\echo 9. Query for every gift that has the word candle in it, only show the gift column
 --
 
 
 --
-\echo Query for every gift whose giver is Santa OR value is greater than 30
+\echo 10. Query for every gift whose giver is Santa OR value is greater than 30
 --
 
 
 --
-\echo Query for every gift whose giver is NOT Santa
+\echo 11. Query for every gift whose giver is NOT Santa
 --
 
 
 --
-\echo Update the second gift to have a value of 2999
+\echo 12. Update the second gift to have a value of 2999
 -- 
 
 
 --
-\echo Query for the updated item
+\echo 13. Query for the updated item
 --
 
 
 --
-\echo Delete all the gifts from Santa and return the 'value' and 'gift' of the gift you have deleted
+\echo 14. Delete all the gifts from Santa and return the 'value' and 'gift' of the gift you have deleted
 --
 
 
 --
-\echo Query for all the columns in your gifts table one more time
+\echo 15. Query for all the columns in your gifts table one more time
 --
 
 
