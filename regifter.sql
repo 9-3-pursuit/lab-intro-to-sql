@@ -164,3 +164,5 @@ LIMIT 3 OFFSET 2;
 -- finish
 --
 DROP TABLE IF EXISTS gifts;
+
+DROP TABLE IF EXISTS gifts;
