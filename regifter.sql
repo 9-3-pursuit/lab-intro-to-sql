@@ -100,7 +100,7 @@ SELECT gift FROM gifts WHERE gift LIKE '%candle%';
 \echo Query for every gift whose giver is Santa OR value is greater than 30
 --
 
-SELECT * FROM gifts WHERE giver = 'Santa' OR value >= 30;
+SELECT * FROM gifts WHERE giver = 'Santa' OR value > 30;
 
 --
 \echo Query for every gift whose giver is NOT Santa
@@ -112,6 +112,9 @@ SELECT * FROM gifts WHERE giver != 'Santa';
 \echo Update the second gift to have a value of 2999
 -- 
 
+UPDATE gifts
+SET value = 2999
+WHERE id = 2;
 
 --
 \echo Query for the updated item
