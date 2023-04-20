@@ -38,7 +38,7 @@ RENAME COLUMN price TO value;
 \echo Insert a peach candle, given by 'Santa' thats value is 9 and has been previously regifted
 -- 
 INSERT INTO                                                                                                                                            
-gifts (gift, giver, price, previously_regifted)                                                                                                                   
+gifts (gift, giver, value, previously_regifted)                                                                                                                   
 VALUES
 ('peach candle', 'Santa', 9, true);
 --
@@ -96,40 +96,40 @@ SELECT gift FROM gifts WHERE giver !='Santa';
 --
 \echo Update the second gift to have a value of 2999
 -- 
-
+UPDATE gifts
+SET value=2999
+WHERE id =2;
 --
 \echo Query for the updated item
 --
-
-
+SELECT * FROM gifts
+WHERE value=2999;
 --
 \echo Delete all the gifts from Santa and return the 'value' and 'gift' of the gift you have deleted
 --
-
-
+DELETE FROM gifts
+WHERE giver = 'Santa'
+RETURNING gift, value;
 --
 \echo Query for all the columns in your gifts table one more time
 --
-
-
+SELECT * FROM gifts; 
 
 -- BONUSES
-
---
  \echo Count the total number of gifts that have the word candle in it
 -- 
-
+SELECT COUNT(*) as candle_gifts_count  
+FROM gifts
+WHERE gift LIKE '%candle%';
 
 --
 \echo Get the AVEREAGE value from all the gifts
 --
-
-
+SELECT AVG(value) AS average_value FROM gifts;
 -- 
  \echo Limit to 3 gifts, offset by 2 and order by price descending
 --
-
---
--- finish
+SELECT * FROM gifts LIMIT 3 OFFSET 2;
 --
 DROP TABLE IF EXISTS gifts;
+
