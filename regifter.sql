@@ -75,7 +75,14 @@ VALUES
 \echo Insert 5 more gifts of your own choosing,  include 1 more candle
 --
 
-
+INSERT INTO gifts (gift, giver, value, previously_regifted)
+VALUES
+('mint candle', 'minty', '23', TRUE),
+('cinnamon', 'John', '30', TRUE),
+('clove', 'Nina', '50', FALSE),
+('IceCream', 'BOB', '15', FALSE),
+('Rose', 'Kent', '40', FALSE)
+;
 
 --
 \echo Query for gifts with a price greater than or equal to 20
