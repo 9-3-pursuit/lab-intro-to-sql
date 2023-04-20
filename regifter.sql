@@ -135,7 +135,7 @@ RETURNING gift, value;
 \echo Query for all the columns in your gifts table one more time
 --
 
-
+SELECT * FROM gifts;
 
 -- BONUSES
 
