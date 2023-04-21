@@ -156,6 +156,9 @@ SELECT AVG(price) FROM gifts;
 
 -- 
  \echo Limit to 3 gifts, offset by 2 and order by price descending
+
+SELECT * FROM gifts ORDER BY price DESC LIMIT 3 OFFSET 2;
+
 --
 
 --
